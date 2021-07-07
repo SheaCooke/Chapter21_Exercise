@@ -8,6 +8,7 @@ namespace Technology
 {
     public class Smartphone : Computer
     {
+        //public int Id { get; set; }
         public string User { get; set; }
 
         public string Call(string personToCall)

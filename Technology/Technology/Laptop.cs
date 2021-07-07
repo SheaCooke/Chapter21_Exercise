@@ -8,6 +8,7 @@ namespace Technology
 {
     public class Laptop : Computer
     {
+        //public int Id { get; set; }
         public string User { get; set; }
 
         public string ChangeLocation(string newLocation)

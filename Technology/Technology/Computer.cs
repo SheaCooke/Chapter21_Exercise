@@ -8,10 +8,12 @@ namespace Technology
 {
 
 
-	public class Computer
+	public class Computer : AbstractEntity
 
 
 	{
+		//public int Id { get; set; }
+
 		public string YearBuilt { get; set; }
 
 		public readonly string Manufacturer;
@@ -28,12 +30,18 @@ namespace Technology
 			return "Using email";
 		}
 
-		public Computer(string year, string model, string manufacturer)
+		public Computer(string year, string model, string manufacturer) : base()
 		{
 			Manufacturer = manufacturer;
 			YearBuilt = year;
 			Model = model;
 		}
+
+		/*public override int IdNumber()
+        {
+
+
+        }*/
 	}
 
 }
