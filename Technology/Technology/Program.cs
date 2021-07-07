@@ -10,7 +10,7 @@ namespace Technology
 
             // test.UseEmail();
 
-            Laptop laptopTest = new Laptop("shea", "2020", "mac");
+            Laptop laptopTest = new Laptop("user", "2020", "mac", "Apple");
 
             laptopTest.UseEmail();
 

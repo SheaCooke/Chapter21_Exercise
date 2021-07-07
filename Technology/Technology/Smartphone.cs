@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    class Smartphone : Computer
+    public class Smartphone : Computer
     {
         public string User { get; set; }
 
-        public Smartphone (string user, string year, string model) : base(year, model)
+        public string Call(string personToCall)
+        {
+            return $"Calling {personToCall}";
+        }
+
+        public Smartphone (string user, string year, string model, string manufacturer) : base(year, model, manufacturer)
         {
             User = user;
         }

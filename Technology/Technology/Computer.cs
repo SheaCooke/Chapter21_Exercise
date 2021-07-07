@@ -14,22 +14,23 @@ namespace Technology
 	{
 		public string YearBuilt { get; set; }
 
-		public readonly string Manufacturer = "Apple";
+		public readonly string Manufacturer;
 
 		public string Model { get; set; }
 
-		public void SearchInternet(string txt)
+		public string SearchInternet(string txt)
 		{
-			Console.WriteLine($"Searching the internet for {txt}");
+			return $"Searching the internet for {txt}";
 		}
 
-		public void UseEmail()
+		public string UseEmail()
 		{
-			Console.WriteLine("Using email");
+			return "Using email";
 		}
 
-		public Computer(string year, string model)
+		public Computer(string year, string model, string manufacturer)
 		{
+			Manufacturer = manufacturer;
 			YearBuilt = year;
 			Model = model;
 		}

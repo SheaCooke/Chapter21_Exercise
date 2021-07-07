@@ -10,9 +10,16 @@ namespace Technology
     {
         public string User { get; set; }
 
-        public Laptop(string user, string year, string model) :base(year, model)
+        public string ChangeLocation(string newLocation)
+        {
+            return $"Moving to {newLocation}";
+        }
+
+        public Laptop(string user, string year, string model, string manufacturer) :base(year, model, manufacturer)
         {
             User = user;
         }
+
+
     }
 }
